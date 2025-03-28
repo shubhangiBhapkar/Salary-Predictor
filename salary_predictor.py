@@ -3,7 +3,7 @@ import joblib as jb
 import numpy as np
 
 # Load Model
-salary = jb.load(r"C:\Users\Admin\OneDrive\Desktop\edunet_foundation\machineLearning\Sal_predictor.pkl")
+salary = jb.load(r"C:\Users\Admin\OneDrive\Desktop\Salary-Predictor\Sal_predictor.pkl")
 
 # Custom Styling
 st.markdown(

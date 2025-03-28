@@ -40,9 +40,10 @@ jb.dump(model,"Sal_predictor.pkl")
 
 # using model
 print('Welcome to the salary precdictor ML model..')
-exp= float(input("Enter your experience in years : "))
-new_data=np.array([[exp]])
-
+exp = float(input("Enter your experience in years: "))
+new_data = pd.DataFrame([[exp]], columns=['YearsExperience'])
 sal_model = jb.load('Sal_predictor.pkl')
 prediction = sal_model.predict(new_data)
-print(f"\U0001F4B0Predicted salary for experience {exp} year is : ₹{predicted_salary:,.2f} INR")
+
+predicted_salary = float(prediction[0])
+print(f"\U0001F4B0 Predicted salary for experience {exp} years is: ₹{predicted_salary:,.2f} INR")
