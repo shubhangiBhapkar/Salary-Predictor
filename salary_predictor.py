@@ -2,8 +2,8 @@ import streamlit as st
 import joblib as jb
 import numpy as np
 
-# Load Model
-salary = jb.load(r"C:\Users\Admin\OneDrive\Desktop\Salary-Predictor\Sal_predictor.pkl")
+# Load Model using relative path
+salary = jb.load("Sal_predictor.pkl")
 
 # Custom Styling
 st.markdown(
